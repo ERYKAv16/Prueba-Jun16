@@ -1,0 +1,155 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* CSS Personalizado */
+
+html, body {
+  width: 100vw;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1140px;
+}
+
+/* CSS Tabs */
+
+#tabs ul {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+#tabs ul li {
+  position: relative;
+  display: block;
+  margin: 0 auto 5px auto;
+  width: 100%;
+  height: 45px;
+}
+#tabs ul li button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 761px) {
+  #tabs ul {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
+
+
+/* CSS Carousel */
+
+#carrusel-productos {
+  position: relative;
+  display: block;
+  margin: 50px auto;
+}
+#carrusel-productos .carousel__item {
+  padding: 0 15px;
+}
+#carrusel-productos .carousel__item figure{
+  position: relative;
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 100%;
+  background: #ccc;
+}
+#carrusel-productos .carousel__item figure {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#carrusel-productos .carousel__item figure img {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#carrusel-productos .carousel__item h4 {
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+#carrusel-productos .carousel__item h3 {
+  position: relative;
+  margin: 10px 0 0 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+#carrusel-productos .carousel__item p {
+  position: relative;
+  margin: 10px 0 0 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+#carrusel-productos .carousel__item.hide {
+  display: none;
+}
+#carrusel-productos .carousel__item.show {
+  display: block;
+}
